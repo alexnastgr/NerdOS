@@ -1,6 +1,6 @@
-@import "./fonts.css";
-@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+@import "tailwindcss";
 
 @theme {
   --color-primary: #7c1a70;
@@ -13,7 +13,7 @@ body {
 }
 
 * {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Inter", sans-serif;
   user-select: none;
 }
 
@@ -48,24 +48,19 @@ body {
 .launcher {
   @apply w-12 h-12 relative rounded-xl flex justify-center items-center cursor-pointer;
   @apply bg-gradient-to-tr border-transparent transition-colors duration-300;
-
 }
 
 .tooltip {
   @apply rounded-tl-lg rounded-br-lg text-lg px-2 font-semibold absolute -top-13 opacity-0 group-hover:opacity-100 transition;
 }
 
-
-
 .titlebar {
   @apply w-full cursor-move p-2 rounded-t-lg flex flex-row items-center justify-center;
 }
 
-
 .notepad-textarea {
   @apply flex-1 bg-transparent outline-none resize-none text-lg placeholder-gray-500;
 }
-
 
 .notepad {
   @apply flex flex-col w-[350px] h-[360px] backdrop-blur-lg shadow-xl rounded-lg p-3;
