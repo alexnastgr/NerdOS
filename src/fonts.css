@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Rajdhani";
+  src:
+    local("Rajdhani Bold"),
+    local("Rajdhani-Bold"),
+    url("assets/fonts/Rajdhani-Bold.woff2") format("woff2"),
+    url("assets/fonts/Rajdhani-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rajdhani";
+  src:
+    local("Rajdhani Light"),
+    local("Rajdhani-Light"),
+    url("assets/fonts/Rajdhani-Light.woff2") format("woff2"),
+    url("assets/fonts/Rajdhani-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rajdhani";
+  src:
+    local("Rajdhani Medium"),
+    local("Rajdhani-Medium"),
+    url("assets/fonts/Rajdhani-Medium.woff2") format("woff2"),
+    url("assets/fonts/Rajdhani-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rajdhani";
+  src:
+    local("Rajdhani Regular"),
+    local("Rajdhani-Regular"),
+    url("assets/fonts/Rajdhani-Regular.woff2") format("woff2"),
+    url("assets/fonts/Rajdhani-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rajdhani";
+  src:
+    local("Rajdhani SemiBold"),
+    local("Rajdhani-SemiBold"),
+    url("assets/fonts/Rajdhani-SemiBold.woff2") format("woff2"),
+    url("assets/fonts/Rajdhani-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

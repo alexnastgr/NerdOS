@@ -1,0 +1,77 @@
+@import "./fonts.css";
+@import "tailwindcss";
+
+
+@theme {
+  --color-primary: #7c1a70;
+  --color-secondary: #a4175a;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+* {
+  font-family: "Rajdhani", sans-serif;
+  user-select: none;
+}
+
+body {
+  background-color: #020e1e;
+}
+
+.desktop {
+  @apply relative;
+}
+
+.statusbar {
+  @apply w-full h-10 flex fixed top-0 border-b justify-center items-center;
+  @apply transition-colors duration-300 backdrop-blur-sm z-50;
+}
+
+.menubtn {
+  @apply w-20 h-full text-white text-3xl font-semibold absolute left-0 top-0;
+  @apply cursor-pointer rounded-br-3xl flex justify-center items-center;
+}
+
+.timeview {
+  @apply font-semibold flex flex-row items-center justify-center gap-3;
+}
+
+.dockbar {
+  @apply absolute left-1/2 -translate-x-1/2 z-50;
+  @apply w-auto p-3 absolute bottom-5 backdrop-blur-sm rounded-2xl;
+  @apply border flex flex-row items-center justify-center gap-3 px-3;
+}
+
+.launcher {
+  @apply w-12 h-12 relative rounded-xl flex justify-center items-center cursor-pointer;
+  @apply bg-gradient-to-tr border-transparent transition-colors duration-300;
+
+}
+
+.tooltip {
+  @apply rounded-tl-lg rounded-br-lg text-lg px-2 font-semibold absolute -top-13 opacity-0 group-hover:opacity-100 transition;
+}
+
+
+
+.titlebar {
+  @apply w-full cursor-move p-2 rounded-t-lg flex flex-row items-center justify-center;
+}
+
+
+.notepad-textarea {
+  @apply flex-1 bg-transparent outline-none resize-none text-lg placeholder-gray-500;
+}
+
+
+.notepad {
+  @apply flex flex-col w-[350px] h-[360px] backdrop-blur-lg shadow-xl rounded-lg p-3;
+  @apply transition-colors duration-300;
+}
+
+.btnclose {
+  @apply w-4 h-4 absolute right-2 text-xs font-normal ml-2;
+}
